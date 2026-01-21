@@ -1,7 +1,5 @@
 # SDrAwberry: Scale-Referenced Depth-Anything-3 Long-Sequence Reconstruction for Berry Volume Estimation
 
-This repository now centers on a **Depth-Anything-3 (DA3)** base method for long multi-camera sequences captured by the field robot. The old VGGT-specific notes have been replaced with instructions that reflect the new batching wrapper, ICP merger, clustering flow, and the concave-hull volume utility that were recently added.
-
 At a high level the pipeline is:
 
 1. **Batch multi-camera footage** with `batch_divider_DA3.py`, which flattens each mini-scene, produces consistency summaries, and invokes either the DA3 CLI or a legacy single-scene script.
